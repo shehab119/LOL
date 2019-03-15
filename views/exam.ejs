@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Exams Data Entry </title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <form action="/exam" method="POST">
+<h1> Welcome To Exams Data Entry Page</h1>
+<hr>
+<a href="/"><img class="logo" src="http://localhost:3000/images/exam.jpg" width="200"></a>
+<hr>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Exam Name</label>
+    <input name="ename" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Exam Type"required>
+    <small id="emailHelp" class="form-text text-muted">Types of Exam.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Exam Marks</label>
+    <input name="emarks" type="number" class="form-control" id="exampleInputPassword1" placeholder="Exam Marks"required>
+    <small id="emailHelp" class="form-text text-muted">Enter Exam Marks.</small>
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Course Name</label>
+    <input name="cname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Course Name"required>
+    <small id="emailHelp" class="form-text text-muted">Enter Course Name..</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Course code</label>
+    <input name="ccode" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Course Code"required>
+    <small id="emailHelp" class="form-text text-muted">Enter Course code.</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Exam Room Number</label>
+    <input name="rno" type="number" class="form-control" id="exampleInputPassword1" placeholder="Hall No"required>
+    <small id="emailHelp" class="form-text text-muted">Ex:301</small>
+  </div>
+
+<button type="submit" class="btn btn-primary">Add & Show</button>
+
+
+<hr>
+
+</form>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Courses Data Entry </title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <form action="/course" method="POST">
+<h1> Welcome To Courses Data Entry Page</h1>
+<hr>
+<a href="/"><img class="logo" src="http://localhost:3000/images/course.jpg" width="200"></a>
+<hr>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Course For</label>
+    <input name="cfor" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name"required>
+    <small id="emailHelp" class="form-text text-muted">Which Department Course it is ?</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Course Name/Title</label>
+    <input name="coname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter ID"required>
+    <small id="emailHelp" class="form-text text-muted">Enter Course Name</small>
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Course Code</label>
+    <input name="cocode" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Department Name"required>
+    <small id="emailHelp" class="form-text text-muted">Enter Course Code.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Course Credit</label>
+    <input name="coc" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter AGE"required>
+    <small id="emailHelp" class="form-text text-muted">Enter Course Credit</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Semester</label>
+    <p><b>Select Course Semester:</b>
+      <select name ="sem" >
+              
+          <option>1st</option>
+          <option>2nd</option>
+          <option>3rd</option>
+          <option>4th</option>
+          <option>5th</option>
+          <option>6th</option>
+          <option>7th</option>
+          <option>8th</option>
+          <option>9th</option>
+          <option>10th</option>
+          <option>11th</option>
+          <option>12th</option>
+          
+      </select>
+  
+  </p>
+  </div>
+
+<button type="submit" class="btn btn-primary">Add & Show</button>
+
+
+<hr>
+
+</form>
+  </body>
+</html>
